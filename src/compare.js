@@ -1,4 +1,4 @@
-import { sortBy } from "lodash";
+import { sortBy } from 'lodash';
 
 function compare(filepath1, filepath2) {
   const file1 = sortBy(filepath1);
