@@ -1,0 +1,9 @@
+name: testW
+on: [push]
+jobs:
+    printHello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: komanda make
+            run: make say-hello
+

@@ -1,8 +1,8 @@
 name: test gitAction
 on: [push]
 jobs:
-  my-job:
+  linter:
     runs-on: ubuntu-latest
     steps:
-      - name: linter
+      - name: eslint check
         run: npx eslint .
