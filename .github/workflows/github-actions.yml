@@ -1,8 +1,0 @@
-name: test gitAction
-on: [push]
-jobs:
-  linter:
-    runs-on: ubuntu-latest
-    steps:
-      - name: eslint check
-        run: npx eslint .

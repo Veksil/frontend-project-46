@@ -17,6 +17,7 @@ export default function gendiff(path1, path2) {
   const itog = [];
   const levelSpace = '  ';
   itog.push('{');
+  // eslint-disable-next-line no-unused-vars, array-callback-return
   const result = keys.map((key) => {
     if (Object.hasOwn(parseFile1, key) && (Object.hasOwn(parseFile2, key))) {
       if (parseFile1[key] === parseFile2[key]) {
@@ -34,6 +35,7 @@ export default function gendiff(path1, path2) {
     }
   });
   itog.push('}');
+  // eslint-disable-next-line no-console
   console.log(itog.join('\n'));
   return itog;
 }

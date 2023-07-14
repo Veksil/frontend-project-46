@@ -1,4 +1,5 @@
 import { Command } from 'commander';
+// eslint-disable-next-line import/extensions
 import gendiff from '../src/index.js';
 
 const program = new Command();
